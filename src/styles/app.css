@@ -1,0 +1,758 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Keania+One&family=Marck+Script&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #121921;
+  width: 100vw;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.home-sec {
+  background-color: #121921;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em 5em;
+}
+
+.home-sec .welcome-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50vw;
+  z-index: 2;
+}
+
+.home-sec .welcome-msg h1 {
+  font-family: "Keania One";
+  font-size: 85px;
+  font-weight: 400;
+  text-align: center;
+  background-image: url("../../public/assets/pattern2.gif");
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-sec .welcome-msg h1 span {
+  font-size: 120px;
+}
+
+.home-sec .welcome-msg p {
+  font-family: Cookie;
+  color: #00FBFB;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-sec .welcome-msg a {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: #121921;
+  width: auto;
+  margin-top: 2em;
+  padding: 0em 2em;
+  font-family: "Marck Script";
+  background: linear-gradient(272.72deg, #FF0000 22.85%, #00FFFF 105.31%);
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.home-sec img {
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.discover-sec {
+  overflow-x: hidden;
+  background-image: url("../../public/assets/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7em;
+}
+
+.discover-sec header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin-top: 1.8em;
+  padding: 0em 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.discover-sec header .discover-heading {
+  font-family: 'Marck Script';
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+}
+
+.discover-sec header .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discover-sec header .search-box .search-input {
+  background: black;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 500px;
+  height: 30px;
+  font-size: .8rem;
+  font-family: poppins;
+  padding: 0em 1em;
+}
+
+.discover-sec header .search-box .search-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.discover-sec header .search-box .search-input:-ms-input-placeholder {
+  color: white;
+}
+
+.discover-sec header .search-box .search-input::-ms-input-placeholder {
+  color: white;
+}
+
+.discover-sec header .search-box .search-input::placeholder {
+  color: white;
+}
+
+.discover-sec header .search-box svg {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  cursor: pointer;
+}
+
+.discover-sec header .logo {
+  font-family: "Keania One";
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.discover-sec header .logo span {
+  color: #FB0000;
+}
+
+.discover-sec .display-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em 4em;
+  margin-top: 1.5em;
+}
+
+.discover-sec .display-container .displays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em 1em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 10px;
+}
+
+.discover-sec .display-container .displays .cover-border {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.discover-sec .display-container .displays .cover-border:hover {
+  background-image: url("../../public/assets/pattern1.gif");
+  background-size: cover;
+}
+
+.discover-sec .discover-sug {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2em;
+}
+
+.discover-sec .discover-sug .popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 1em;
+  width: 50%;
+  margin-left: 4em;
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 10px;
+}
+
+.discover-sec .discover-sug .popular .popular-heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: left;
+  font-family: "poppins";
+  font-size: 1.2rem;
+  margin-left: 2em;
+  padding-bottom: 1em;
+  font-weight: 700;
+  color: white;
+}
+
+.discover-sec .discover-sug .popular .popular-heading span {
+  color: #00FBFB;
+}
+
+.discover-sec .discover-sug .popular ol {
+  margin-left: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.discover-sec .discover-sug .popular ol li {
+  font-family: "poppins";
+  font-weight: 400;
+  color: white;
+  margin-bottom: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.discover-sec .discover-sug .popular ol li span {
+  font-size: .9rem;
+  margin-right: 4em;
+}
+
+.discover-sec .discover-sug .popular ol li:hover {
+  color: #00FBFB;
+}
+
+.discover-sec .discover-sug .artist {
+  width: 38%;
+  background-color: rgba(0, 0, 0, 0.38);
+  margin-right: 4em;
+  height: 200px;
+  padding: 2em 1em;
+  border-radius: 10px;
+}
+
+.discover-sec .discover-sug .artist .heading {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 2em;
+}
+
+.discover-sec .discover-sug .artist .heading span {
+  color: #00FBFB;
+}
+
+.discover-sec .player-bg {
+  width: 100vw;
+  padding: 0em 2em;
+  position: fixed;
+  bottom: 1em;
+  height: 60px;
+}
+
+.discover-sec .player-bg .audio-wrapper {
+  background-color: black;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discover-sec .player-bg .audio-wrapper .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.discover-sec .player-bg .audio-wrapper .details .icon {
+  height: inherit;
+  width: auto;
+}
+
+.discover-sec .player-bg .audio-wrapper .details p {
+  color: white;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: .9rem;
+  margin: 0em 1em;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.discover-sec .player-bg .audio-wrapper .wrap-pause {
+  padding: 7px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -webkit-animation: blob 2s linear infinite;
+          animation: blob 2s linear infinite;
+  cursor: pointer;
+  background-image: linear-gradient(272.72deg, #FF0000 22.85%, #00FFFF 105.31%);
+  background-size: cover;
+}
+
+.discover-sec .player-bg .audio-wrapper .wrap-pause .pause-icon {
+  -webkit-transform: translate(3px, 5px);
+          transform: translate(3px, 5px);
+}
+
+.discover-sec .player-bg .audio-wrapper .wrap-pause .pause-icon path {
+  fill: white;
+}
+
+.discover-sec .player-bg .audio-wrapper .wrap-pause .pause-icon:hover path {
+  fill: black;
+}
+
+.discover-sec .player-bg .audio-wrapper .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.discover-sec .player-bg .audio-wrapper .controls .range {
+  width: 450px;
+  height: 1px;
+  margin: 0em .7em;
+  margin-right: 15px;
+}
+
+.discover-sec .player-bg .audio-wrapper .controls small {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+@-webkit-keyframes blob {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .discover-sec {
+    padding: 0em 0em;
+  }
+  .discover-sec .card-img {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .discover-sec .discover-sug .popular ol li span {
+    margin-right: 1em;
+  }
+  .discover-sec .player-bg .audio-wrapper .controls .range {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .home-sec {
+    padding: 0em 0em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .discover-sec {
+    padding: 0em 0em;
+  }
+  .discover-sec header .discover-heading {
+    font-size: 35px;
+  }
+  .discover-sec header .search-box .search-input {
+    width: 400px;
+    font-size: .9rem;
+  }
+  .discover-sec .card-img {
+    width: 110px;
+    height: 110px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .discover-sec .discover-sug .popular ol li span {
+    margin-right: 15px;
+    font-size: .8rem;
+  }
+  .discover-sec .song-name {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .discover-sec .player-bg .audio-wrapper .controls .range {
+    width: 200px;
+  }
+  .discover-sec .player-bg .audio-wrapper .details p {
+    width: 200px;
+    font-size: .8rem;
+  }
+  .discover-sec .discover-sug .artist {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home-sec {
+    padding: 0em 0em;
+  }
+  .home-sec .welcome-msg {
+    width: 40vw;
+  }
+  .home-sec .welcome-msg h1 {
+    font-size: 60px;
+  }
+  .home-sec .welcome-msg h1 span {
+    font-size: 90px;
+  }
+  .home-sec .welcome-msg p {
+    font-size: 30px;
+  }
+  .home-sec img {
+    right: -2em;
+  }
+  .discover-sec {
+    background-image: url("../../public/assets/small-background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 18em;
+  }
+  .discover-sec header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover-sec header .logo {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 1.5rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .discover-sec header .search-box {
+    width: 100vw;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding-top: 2em;
+    padding-left: 2em;
+  }
+  .discover-sec header .search-box .search-input {
+    width: 300px;
+    font-size: 1rem;
+  }
+  .discover-sec header .discover-heading {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 40px;
+    margin-top: .5em;
+  }
+  .discover-sec .display-container {
+    padding: 0em 1em;
+  }
+  .discover-sec .display-container .displays {
+    overflow-x: scroll;
+    padding: 1em 1em;
+  }
+  .discover-sec .display-container .displays .cover-border {
+    margin-right: 1em;
+  }
+  .discover-sec .display-container .displays .cover-border .card-img {
+    width: 200px;
+    height: 200px;
+  }
+  .discover-sec .discover-sug {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    padding: 0em 1em;
+  }
+  .discover-sec .discover-sug .popular {
+    width: 100%;
+    margin-left: 0;
+  }
+  .discover-sec .discover-sug .popular ol li {
+    margin-bottom: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .discover-sec .discover-sug .popular ol li span {
+    font-size: .95rem;
+    margin-right: 10px;
+  }
+  .discover-sec .discover-sug .popular ol li .song-name {
+    width: 300px;
+  }
+  .discover-sec .discover-sug .artist {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1em;
+  }
+  .discover-sec .player-bg {
+    height: 200px;
+    padding: 0;
+    bottom: 0;
+    background-image: linear-gradient(272.72deg, #FF0000 22.85%, #00FFFF 105.31%);
+    overflow: hidden;
+    padding: 2px;
+  }
+  .discover-sec .player-bg .audio-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em 0em;
+  }
+  .discover-sec .player-bg .audio-wrapper .details {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 0px;
+  }
+  .discover-sec .player-bg .audio-wrapper .details .icon {
+    display: none;
+  }
+  .discover-sec .player-bg .audio-wrapper .details p {
+    font-size: .9rem;
+    width: 350px;
+  }
+  .discover-sec .player-bg .audio-wrapper .wrap-pause {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: static;
+    margin-top: .7em;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .discover-sec .player-bg .audio-wrapper .controls {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .discover-sec .player-bg .audio-wrapper .controls .range {
+    width: 250px;
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home-sec {
+    padding: 0em 0em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home-sec .welcome-msg {
+    width: 100vw;
+    position: absolute;
+    bottom: 2em;
+  }
+  .home-sec .welcome-msg h1 {
+    font-size: 80px;
+  }
+  .home-sec .welcome-msg h1 span {
+    font-size: 110px;
+  }
+  .home-sec .welcome-msg p {
+    font-size: 30px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .home-sec .welcome-msg a {
+    margin-top: 1em;
+  }
+  .home-sec img {
+    right: -90%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=app.css.map */
