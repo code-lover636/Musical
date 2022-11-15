@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Musical/static/css/main.fc5db5ff.css",
-    "main.js": "/Musical/static/js/main.46432a10.js",
+    "main.js": "/Musical/static/js/main.55b2146d.js",
     "static/media/pattern2.gif": "/Musical/static/media/pattern2.9de501a2833c6460e8c7.gif",
     "static/media/pattern1.gif": "/Musical/static/media/pattern1.81d647cbe741af8671ec.gif",
     "static/media/background.png": "/Musical/static/media/background.d8e990d16e756abe4dd6.png",
     "index.html": "/Musical/index.html",
     "main.fc5db5ff.css.map": "/Musical/static/css/main.fc5db5ff.css.map",
-    "main.46432a10.js.map": "/Musical/static/js/main.46432a10.js.map"
+    "main.55b2146d.js.map": "/Musical/static/js/main.55b2146d.js.map"
   },
   "entrypoints": [
     "static/css/main.fc5db5ff.css",
-    "static/js/main.46432a10.js"
+    "static/js/main.55b2146d.js"
   ]
 }
