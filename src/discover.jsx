@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '7f83cbbbc1msha29c9333bab8c83p11b43ajsn1915896aabd7',
+		'X-RapidAPI-Key': '',
 		'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
 	}
 };
