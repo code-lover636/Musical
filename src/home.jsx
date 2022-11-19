@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Home(){
     return(
@@ -7,7 +8,9 @@ function Home(){
             <div className="welcome-msg">
                 <h1><span>M</span>usical</h1>
                 <p>Where  words  fail,  music  speak</p>
-                <a href="/discover">Discover</a>
+                <Link className="a" to="/discover">
+                    Discover
+                </Link>  
             </div>
             <img src="./assets/man.png" alt="man with headphones" />
         </section>

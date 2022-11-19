@@ -74,7 +74,7 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-.home-sec .welcome-msg a {
+.home-sec .welcome-msg .a {
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -176,6 +176,10 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.discover-sec header .a {
+  text-decoration: none;
+}
+
 .discover-sec header .logo {
   font-family: "Keania One";
   font-size: 2rem;
@@ -215,7 +219,9 @@ body::-webkit-scrollbar {
           align-items: center;
   padding: .7em 1em;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.185);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -233,6 +239,13 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.discover-sec .display-container .displays .cover-border .card-img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .discover-sec .display-container .displays .cover-border:hover {
@@ -270,7 +283,9 @@ body::-webkit-scrollbar {
   padding: 2em 1em;
   width: 50%;
   margin-left: 4em;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.534);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -279,7 +294,8 @@ body::-webkit-scrollbar {
       align-self: flex-start;
   text-align: left;
   font-family: "poppins";
-  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
   margin-left: 2em;
   padding-bottom: 1em;
   font-weight: 700;
@@ -305,9 +321,9 @@ body::-webkit-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -315,8 +331,23 @@ body::-webkit-scrollbar {
 }
 
 .discover-sec .discover-sug .popular ol li span {
-  font-size: .9rem;
+  font-size: 1rem;
   margin-right: 4em;
+  text-align: left;
+}
+
+.discover-sec .discover-sug .popular ol li .song-name {
+  width: 370px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.discover-sec .discover-sug .popular ol li .artist-name {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .discover-sec .discover-sug .popular ol li:hover {
@@ -325,23 +356,61 @@ body::-webkit-scrollbar {
 
 .discover-sec .discover-sug .artist {
   width: 38%;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.534);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   margin-right: 4em;
-  height: 200px;
-  padding: 2em 1em;
+  height: auto;
+  padding: 2em 5em;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .discover-sec .discover-sug .artist .heading {
   font-family: Poppins;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
-  margin-left: 2em;
+  padding-bottom: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .discover-sec .discover-sug .artist .heading span {
   color: #00FBFB;
+}
+
+.discover-sec .discover-sug .artist img {
+  width: 90%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-bottom: 3em;
+}
+
+.discover-sec .discover-sug .artist h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.discover-sec .discover-sug .artist .artist-name {
+  font-size: 1rem;
 }
 
 .discover-sec .player-bg {

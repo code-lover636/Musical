@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Card(){
+function Card(props){
     return(
         <>
-        <div className="cover-border">
-            <img className="card-img" src="./assets/cover.png" alt="cover-img" />
+        <div className="cover-border" onClick={() => {props.func();}} >
+            <img className="card-img" src={props.cover!==""? props.cover["images"]["coverart"]:""} alt="cover-img" />
         </div>
         </>
     );

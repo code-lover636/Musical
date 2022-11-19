@@ -56,7 +56,7 @@ body{
             font-weight: 400;
             text-align: center;
         }
-        a{
+        .a{
             text-align: center;
             align-self: center;
             text-decoration: none;
@@ -121,6 +121,7 @@ body{
                 cursor: pointer;
             }
         }
+        .a{text-decoration:none}
         .logo{
             font-family: "Keania One";
             font-size: 2rem;
@@ -146,7 +147,8 @@ body{
             align-items: center;
             padding: .7em 1em;
             width: 100%;
-            background-color:  rgba(0, 0, 0, 0.38);
+            background-color:  rgba(0, 0, 0, 0.185);
+            backdrop-filter: blur(5px);
             border-radius: 10px;
             .cover-border{
                 padding: 5px;
@@ -156,6 +158,11 @@ body{
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                .card-img{
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                }
                 &:hover{
                     background-image: url("../../public/assets/pattern1.gif");
                     background-size: cover;
@@ -176,13 +183,15 @@ body{
             padding: 2em 1em;
             width: 50%;
             margin-left: 4em;
-            background-color:  rgba(0, 0, 0, 0.38);
+            background-color:  rgba(0, 0, 0, 0.534);
+            backdrop-filter: blur(5px);
             border-radius: 10px;
             .popular-heading{
                 align-self: flex-start;
                 text-align: left;
                 font-family: "poppins";
-                font-size: 1.2rem;
+                text-transform: capitalize;
+                font-size: 1.4rem;
                 margin-left: 2em;
                 padding-bottom: 1em;
                 font-weight: 700;
@@ -197,16 +206,29 @@ body{
                 li{
                     font-family: "poppins";
                     font-weight: 400;
-                    color: white;
+                    color: rgb(255, 255, 255);
                     margin-bottom: 5px;
                     width: 100%;
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     align-items: center;
                     cursor: pointer;
                     span{
-                        font-size: .9rem;
+                        font-size: 1rem;
                         margin-right: 4em;
+                        text-align: left;
+                    }
+                    .song-name{
+                        width: 370px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .artist-name{
+                        width: 150px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                     &:hover{
                         color: $blue;
@@ -216,20 +238,43 @@ body{
         }
         .artist{
             width: 38%;
-            background-color:  rgba(0, 0, 0, 0.38);
+            background-color:  rgba(0, 0, 0, 0.534);
+            backdrop-filter: blur(5px);
             margin-right: 4em;
-            height: 200px;
-            padding: 2em 1em;
+            height: auto;
+            padding: 2em 5em;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .heading{
                 font-family: Poppins;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 color: white;
-                margin-left: 2em;
+                padding-bottom: 2em;
+                align-self: flex-start;
                 span{
                     color: $blue;
                 }
+            }
+            img{
+                width: 90%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px;
+                border: 1px solid white;
+                margin-bottom: 3em;
+            }
+            h2{
+                font-family: Poppins;
+                font-weight: 700;
+                color: white;
+                text-transform: uppercase;
+            }
+            .artist-name{
+                font-size: 1rem;
             }
         }
     }
