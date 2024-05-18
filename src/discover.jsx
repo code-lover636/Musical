@@ -41,7 +41,7 @@ function Discover(){
             ans_list.push(data[i]["track"]);
         };     
         setMusic(ans_list);
-        setNowPlaying([ans_list[0]["images"]["coverart"], ans_list[0]["title"]]);
+        setNowPlaying([ans_list[0]["images"]["coverart"], ans_list[0]["title"], ans_list[0]["hub"]["actions"][1]["uri"]]);
     }
 
     const [music, setMusic] = useState([]);
