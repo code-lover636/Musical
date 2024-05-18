@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '',
+		'X-RapidAPI-Key': '15a2a9dc5bmsh020a3872b83c185p10621ejsnd08f0392c827',
 		'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
 	}
 };
@@ -41,6 +41,7 @@ function Discover(){
             ans_list.push(data[i]["track"]);
         };     
         setMusic(ans_list);
+        setNowPlaying([ans_list[0]["images"]["coverart"], ans_list[0]["title"]]);
     }
 
     const [music, setMusic] = useState([]);
@@ -77,7 +78,7 @@ function Discover(){
             </div>
             <section className="discover-sug">
                 <div className="popular">
-                    <h1 className="popular-heading">{searchTerm===""?"Most":searchTerm} <span>{searchTerm===""?"Popular":""}</span></h1>
+                    <h1 className="popular-heading"><span>{searchTerm===""?"Metal":""}</span></h1>
                     <ol>
                         {music.length>0 ? music.slice(5).map(item => {
                             return(
@@ -96,7 +97,7 @@ function Discover(){
                     <h1 className="heading">Now <span>Playing</span></h1>
                     <img src={music.length>0 ? nowPlaying[0]: ""} alt="cover" />
                     <h2 className="song-name">{music.length>0 ? nowPlaying[1]: ""}</h2>
-                    <h2 className="artist-name">{music.length>0 ? nowPlaying[3]:""}</h2>
+                    {/* <h2 className="artist-name">{music.length>0 ? nowPlaying[3]:""}</h2> */}
                 </div>
             </section>
             <MusicPlayer music={music} icon={music.length>0 ? nowPlaying[0]: ""} title={music.length>0 ? nowPlaying[1]: ""} audio={music.length>0 ? nowPlaying[2]: ""}/>
