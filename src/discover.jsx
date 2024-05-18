@@ -15,17 +15,19 @@ const options = {
 
 function Discover(){
 
-    async function Popular(){
-        const data = await fetch('https://shazam-core.p.rapidapi.com/v1/charts/world', options)
-                                .then(response => response.json())
-                                .catch(err => console.error(err));
-        const sug_list = [];
-        for (let i = 0; i<data.length; i++){
-            sug_list.push(data[i]);
-        };       
-        setMusic(sug_list);
-        setNowPlaying([sug_list[0]["images"]["coverart"],sug_list[0]["title"],sug_list[0]["hub"]["actions"][1]["uri"],sug_list[0]["artists"][0]["alias"]]);
-    }
+    // async function Popular(){
+    //     fetch('https://shazam-core.p.rapidapi.com/v1/charts/get-top-songs-in-world', options)
+    //                             .then(response => {
+    //                                 const data = response.json();
+    //                                 const sug_list = [];
+    //                                 for (let i = 0; i<data.length; i++)
+    //                                     sug_list.push(data[i]);
+     
+    //                                 setMusic(sug_list);
+    //                                 setNowPlaying([sug_list[0]["images"]["coverart"],sug_list[0]["title"],sug_list[0]["hub"]["actions"][1]["uri"],sug_list[0]["artists"][0]["alias"]]);
+    //                             })
+    //                             .catch(err => console.error(">>"+err));
+    // }
 
     async function searchMusic(query){
         const url = 'https://shazam-core.p.rapidapi.com/v1/search/multi?';
@@ -45,7 +47,7 @@ function Discover(){
     const [nowPlaying, setNowPlaying] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    useEffect(() => {Popular()},[]);
+    useEffect(() => {searchMusic("Metal")},[]);
     
     return(
         <>
